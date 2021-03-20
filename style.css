@@ -45,7 +45,7 @@ div.wrapper {
 	width: 25.3%;
 	min-width: 320px;
 	max-width: 350px;
-	height: 340px; /* Fix */
+	height: 375px; /* Fix */
 	background-color: #fff;
 	border-radius: 15px;
 	display: flex;
@@ -54,7 +54,7 @@ div.wrapper {
 }
 div.headerWrapper {
 	position: relative;
-	height: 128px; /* Fix */
+	height: 142px; /* Fix */
 	background-image: url("images/bg-pattern-card.svg");
 	border-radius: 15px 15px 0 0;
 	width: 100%;
@@ -68,15 +68,17 @@ div.headerWrapper > img {
 	transform: translate(-50%,50%);
 }
 div.nameWrapper {
-	height: 132px;
+	height: 145px;
 }
 div.nameWrapper > div {
-	margin-top: 67px;
+	margin-top: 70px;
 	margin-bottom: 25px;
 	text-align: center;
+	color: var(--primary3);
 }
 div.nameWrapper > div span {
 	font-weight: 700;
+	color: var(--primary2);
 }
 div.nameWrapper .location {
 	margin-top: 8px;
@@ -87,7 +89,8 @@ div.infoWrapper {
 	border-top: 1px solid #E8E8E8;
 	display: grid;
 	grid-template-columns: repeat(3,1fr);
-	height: 80px;
+	height: 88px;
+	padding: 0 30px;
 }
 div.infoWrapper > div.info {
 	display: flex;
@@ -97,10 +100,10 @@ div.infoWrapper > div.info {
 	align-items: center;
 }
 div.info > h2 {
-	font-size: 20px;
+	font-size: 16px;
 }
 div.info > p {
-	font-size: 10px;
+	font-size: 9px;
 	color: var(--primary3);
 	letter-spacing: 2px;
 }
