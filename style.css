@@ -1,0 +1,111 @@
+:root {
+	--primary1: hsl(185, 75%, 39%);
+	--primary2: hsl(229, 23%, 23%);
+	--primary3: hsl(227, 10%, 46%);
+	--neutral: hsl(0, 0%, 59%);
+}
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body {
+	font-size: 18px;
+	font-family: 'Kumbh Sans', sans-serif;
+	font-weight: 400;
+	width: 100vw;
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: var(--primary1);
+	color: var(--primary2);
+	overflow: hidden;
+}
+body::after {
+	content: "";
+	position: absolute;
+	width: 900px;
+	height: 900px;
+	background-image: url("images/bg-pattern-top.svg");
+ 	background-repeat: no-repeat;
+  background-size: 100%;
+	top: -465px;
+	left: -295px;
+}
+body::before {
+	content: "";
+	position: absolute;
+	width: 900px;
+	height: 900px;
+	background-image: url("images/bg-pattern-bottom.svg");
+ 	background-repeat: no-repeat;
+  background-size: 100%;
+	bottom: -585px;
+	right: -240px;
+}
+div.wrapper {
+	position: relative;
+	width: 320px; /* Fix */
+	height: 340px; /* Fix */
+	background-color: #fff;
+	border-radius: 15px;
+	display: flex;
+	flex-direction: column;
+	z-index: 420;
+}
+div.headerWrapper {
+	position: relative;
+	height: 128px; /* Fix */
+	background-image: url("images/bg-pattern-card.svg");
+	border-radius: 15px 15px 0 0;
+	width: 100%;
+}
+div.headerWrapper > img {
+	border-radius: 50%;
+	border: 5px solid #fff;
+	position: absolute;
+	left: 50%;
+	bottom: 0;
+	transform: translate(-50%,50%);
+}
+div.nameWrapper {
+	height: 132px;
+}
+div.nameWrapper > div {
+	margin-top: 67px;
+	margin-bottom: 25px;
+	text-align: center;
+}
+div.nameWrapper > div span {
+	font-weight: 700;
+}
+div.nameWrapper .location {
+	margin-top: 8px;
+	font-size: 12px;
+	color: var(--primary3);
+}
+div.infoWrapper {
+	border-top: 1px solid #E8E8E8;
+	display: grid;
+	grid-template-columns: repeat(3,1fr);
+	height: 80px;
+}
+div.infoWrapper > div.info {
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+	justify-content: center;
+	align-items: center;
+}
+div.info > h2 {
+	font-size: 20px;
+}
+div.info > p {
+	font-size: 10px;
+	color: var(--primary3);
+	letter-spacing: 2px;
+}
+/*
+- Family: [Kumbh Sans](https://fonts.google.com/specimen/Kumbh+Sans)
+- Weights: 400, 700
+
+- Mobile: 375px
+- Desktop: 1440px
+*/
