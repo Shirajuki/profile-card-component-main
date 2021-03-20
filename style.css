@@ -26,8 +26,8 @@ body::after {
 	background-image: url("images/bg-pattern-top.svg");
  	background-repeat: no-repeat;
   background-size: 100%;
-	top: -465px;
-	left: -295px;
+	right: 52.3%;
+	bottom: 33.3%;
 }
 body::before {
 	content: "";
@@ -37,8 +37,8 @@ body::before {
 	background-image: url("images/bg-pattern-bottom.svg");
  	background-repeat: no-repeat;
   background-size: 100%;
-	bottom: -585px;
-	right: -240px;
+	left: 48%;
+	top: 52%
 }
 div.wrapper {
 	position: relative;
