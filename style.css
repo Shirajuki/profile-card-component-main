@@ -42,7 +42,9 @@ body::before {
 }
 div.wrapper {
 	position: relative;
-	width: 320px; /* Fix */
+	width: 25.3%;
+	min-width: 320px;
+	max-width: 350px;
 	height: 340px; /* Fix */
 	background-color: #fff;
 	border-radius: 15px;
